@@ -15,7 +15,7 @@ streamlit run app.py
 2. At [share.streamlit.io](https://share.streamlit.io), select **Create app** and connect the repository.
 3. Select `app.py` as the main file and click **Deploy**.
 
-`runtime.txt` pins Python 3.11 for MediaPipe compatibility. The training dataset is not required for deployment.
+During **Create app**, open **Advanced settings** and choose **Python 3.11**. (The Python version is selected in Streamlit Cloud's deployment UI.) The `packages.txt` file supplies the Linux `libgl1` and GLib runtime dependencies required by OpenCV. The training dataset is not required for deployment.
 
 ## How it works
 
